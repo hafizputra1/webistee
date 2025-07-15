@@ -91,3 +91,8 @@ body {
 .hobi-gallery img {
   border-radius: 8px;
 }
+
+.hobi {
+  text-align: center;
+  padding: 40px 20px;
+}
