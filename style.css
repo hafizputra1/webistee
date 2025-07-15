@@ -126,3 +126,23 @@ body {
 .sosial-links a:hover {
   color: #007bff; /* warna biru pas di hover */
 }
+
+.sosial-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sosial-links a {
+  color: blue; /* atau sesuaikan */
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.sosial-links i {
+  font-size: 40px; /* Ukuran ikon (bisa ubah jadi 50px atau 60px) */
+  transition: transform 0.2s;
+}
+
+.sosial-links i:hover {
+  transform: scale(1.2); /* Efek zoom saat hover */
+}
