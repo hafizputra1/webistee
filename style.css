@@ -105,3 +105,24 @@ body {
   text-align: center;
   padding: 40px 20px;
 }
+
+.sosial-media {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sosial-media h2 {
+  margin-bottom: 20px;
+}
+
+.sosial-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.sosial-links a:hover {
+  color: #007bff; /* warna biru pas di hover */
+}
