@@ -83,10 +83,19 @@ body {
   font-size: 1rem;
 }
 
+.hobi {
+  text-align: center;
+  padding: 40px 20px;
+}
+
 .hobi-gallery {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 20px; /* Jarak antar gambar */
+  flex-wrap: wrap; /* Agar responsif saat layar kecil */
+  margin-top: 20px;
 }
+
 
 .hobi-gallery img {
   border-radius: 8px;
