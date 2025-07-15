@@ -10,32 +10,28 @@ body {
   color: #fff;
 }
 
-/* HEADER SECTION */
+/* HEADER SECTION TANPA background-image */
 header {
-  background-image: url("image/profile.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 12px;
+  background-color: #1e1e1e;
+  height: auto;
+  padding: 60px 20px;
   text-align: center;
-  animation: fadeIn 2s ease-in-out;
 }
 
-.overlay h1 {
+header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-.overlay p {
+header p {
   font-size: 1.1rem;
   margin: 0.2rem 0;
 }
@@ -48,8 +44,7 @@ section {
 
 /* TENTANG */
 .tentang {
-  background-color: #1e1e1e;
-  animation: slideUp 1.5s ease-in-out;
+  background-color: #2a2a2a;
 }
 
 .tentang h2 {
@@ -59,8 +54,7 @@ section {
 
 /* GALERI */
 .galeri {
-  background-color: #2a2a2a;
-  animation: fadeIn 2s ease-in;
+  background-color: #333;
 }
 
 .galeri h2 {
@@ -80,40 +74,38 @@ section {
   height: 180px;
   object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.galeri-grid img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-}
-
-/* ANIMASI */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-.profil {
-  text-align: center;
+/* SKILL */
+.skill-section {
   padding: 40px 20px;
+  background-color: #444;
 }
 
-.profil img {
-  border-radius: 50%;
+.skill-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.profil a {
-  color: #333;
-  text-decoration: none;
-  margin: 0 5px;
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
-.profil a:hover {
-  text-decoration: underline;
+.skill-box {
+  text-align: center;
+  max-width: 150px;
+}
+
+.skill-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.skill-box p {
+  margin-top: 10px;
+  font-weight: bold;
 }
