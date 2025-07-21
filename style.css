@@ -146,3 +146,37 @@ body {
 .sosial-links i:hover {
   transform: scale(1.2); /* Efek zoom saat hover */
 }
+
+.about-me h2 {
+  color: #333;
+  font-weight: bold;
+}
+
+.about-me p {
+  color: #555;
+}
+
+.portfolio h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.portfolio .card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.portfolio .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio .card-content {
+  padding: 15px;
+}

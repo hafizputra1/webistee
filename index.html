@@ -7,21 +7,61 @@
   <link rel="stylesheet" href="style.css" />
   <!-- Link Font Awesome untuk icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- SECTION HERO -->
-  <section class="hero">
+  <section class="hero" data-aos="fade-down">
     <img src="image/profile.jpg" alt="Foto Profil" class="profile-pic" />
     <h1>Hafiz Putra Dewanto</h1>
     <p class="bio">Pro Player EVOS • Jakarta, 18 Agustus 2006</p>
     <p class="hobi">Hobi: Bermain Game</p>
   </section>
 
+  <!-- SECTION ABOUT ME -->
+  <section class="about-me" data-aos="fade-up" style="padding: 60px 20px; background-color: #f9f9f9;">
+    <div style="max-width: 800px; margin: auto; text-align: center;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Tentang Saya</h2>
+      <p style="font-size: 1.1rem; line-height: 1.6;">
+        Halo! Saya Hafiz Putra Dewanto, seorang mahasiswa yang tertarik dengan dunia pemrograman, desain web, dan pengembangan aplikasi. Saya suka belajar hal baru dan sedang mengeksplorasi teknologi seperti HTML, CSS, JavaScript, dan Laravel.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION PORTFOLIO -->
+  <section class="portfolio" data-aos="fade-up" style="padding: 60px 20px; background-color: #ffffff;">
+    <div style="max-width: 1000px; margin: auto;">
+      <h2 style="text-align: center; font-size: 2rem; margin-bottom: 40px;">Portfolio Saya</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        
+        <!-- Project 1 -->
+        <div data-aos="zoom-in" style="width: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+          <img src="image/project1.jpg" alt="Project 1" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 15px;">
+            <h3 style="margin-top: 0;">Website Portfolio</h3>
+            <p>Website ini dibuat dengan HTML, CSS, dan JavaScript. Menampilkan informasi pribadi dan proyek saya.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div data-aos="zoom-in" data-aos-delay="100" style="width: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+          <img src="image/project2.jpg" alt="Project 2" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 15px;">
+            <h3 style="margin-top: 0;">Aplikasi Kasir</h3>
+            <p>Proyek aplikasi kasir sederhana berbasis web menggunakan Laravel dan MySQL.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- SECTION SKILL -->
-  <section class="skills">
+  <section class="skills" data-aos="fade-right">
     <h2>Skill Saya</h2>
     <div class="skill-grid">
-      <div class="skill-item">
+      <div class="skill-item" data-aos="zoom-in">
         <img src="image/photoshop.png" alt="Photoshop">
         <p>Photoshop</p>
       </div>
@@ -29,17 +69,17 @@
   </section>
 
   <!-- SECTION HOBI -->
-  <section class="hobi">
+  <section class="hobi" data-aos="fade-left">
     <h2>Hobi Saya</h2>
     <div class="hobi-gallery">
-      <img src="image/hobi1.jpg" alt="Hobi 1" width="300">
-      <img src="image/hobi2.jpg" alt="Hobi 2" width="300">
+      <img src="image/hobi1.jpg" alt="Hobi 1" width="300" data-aos="zoom-in">
+      <img src="image/hobi2.jpg" alt="Hobi 2" width="300" data-aos="zoom-in" data-aos-delay="100">
     </div>
     <p>Saya suka bermain game mobile legend dan sering mendapatkan juara.</p>
   </section>
 
   <!-- SECTION SOSIAL MEDIA -->
-  <section class="sosial-media">
+  <section class="sosial-media" data-aos="fade-up">
     <h2>Media Sosial Saya</h2>
     <div class="sosial-links">
       <a href="https://instagram.com/hafiizz_putra" target="_blank">
@@ -53,5 +93,14 @@
       </a>
     </div>
   </section>
+
+  <!-- AOS INIT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
